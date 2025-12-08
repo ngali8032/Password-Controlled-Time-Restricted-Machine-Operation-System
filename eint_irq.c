@@ -145,12 +145,13 @@ void Edit_HOUR() /*Function defination for Edit Hour*/
 	{
 		delay_ms(300);
 		key = KeyScan();
-		if(key=='C' && i!=13)
+		if(key=='C' && i!=12)
 		{
 				--i;
 				CmdLCD(0XC0+i);
 			 	CharLCD(' ');
 				--i;
+			hr/=10;
 		}
 		if(key=='E') break;
 		if(key!='C'){
@@ -159,8 +160,11 @@ void Edit_HOUR() /*Function defination for Edit Hour*/
 			hr = (key-48)+hr*10;
 		}
 	}
-	if(hr>=0 && hr<=23)
+	if(hr>=0 && hr<=23){
 		SetRTCTimeInfo(hr, MIN, SEC);
+		delay_ms(100);
+		CmdLCD(0x01);
+	}
 	else
 	{
 		CmdLCD(0x01);
@@ -188,12 +192,13 @@ void Edit_MIN() /*Function defination for Edit minute*/
 	{
 		delay_ms(300);
 		key = KeyScan();
-		if(key=='C' && i!=13)
+		if(key=='C' && i!=12)
 		{
 				--i;
 				CmdLCD(0XC0+i);
 			 	CharLCD(' ');
 				--i;
+			min /= 10;
 		}
 		if(key=='E') break;
 		if(key!='C'){
@@ -231,12 +236,13 @@ void Edit_SEC() /*Function defination for Edit second*/
 	{
 		delay_ms(300);
 		key = KeyScan();
-		if(key=='C' && i!=13)
+		if(key=='C' && i!=12)
 		{
 				--i;
 				CmdLCD(0XC0+i);
 			 	CharLCD(' ');
 				--i;
+			sec /= 10;
 		}
 		if(key=='E') break;
 		if(key!='C'){
@@ -652,3 +658,4 @@ void Edit_DEVICE_ALLOW_TIME(void)
 				CmdLCD(0x01);
 			delay_ms(300);
 }
+
