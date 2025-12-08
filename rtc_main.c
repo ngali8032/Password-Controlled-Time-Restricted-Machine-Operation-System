@@ -63,6 +63,9 @@ u32 password()
 		if(key!='C'){
 			CmdLCD(0XC0+i);
 			CharLCD(key);
+			delay_ms(100);
+			CmdLCD(0XC0+i);
+			CharLCD('*');
 			pass2[i] = key;
 		}
 		delay_ms(200);
@@ -122,3 +125,4 @@ void operation()
 		}
 	}
 }
+
