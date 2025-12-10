@@ -21,14 +21,17 @@ Project Workflow:
 3. Authenticate user with password.
 4. Check allowed working hours.
 5. Grant or deny access accordingly.
-   
+   <img width="1568" height="854" alt="Screenshot 2025-12-08 214604" src="https://github.com/user-attachments/assets/48097988-9430-4e8a-a009-e4a5903955a6" />
+   <img width="1709" height="831" alt="Screenshot 2025-12-08 215505" src="https://github.com/user-attachments/assets/e4ebdfbf-8265-43a7-a608-5b82a0df6554" />
+
 Configuration Mode (Triggered by External Interrupt P0.1):
 Menu:
 1. E.RTCINFO
 2. E.DEV.A.TIME
 3. PWD CHG
 4. EXIT
-   
+   <img width="1721" height="836" alt="Screenshot 2025-12-08 215529" src="https://github.com/user-attachments/assets/5630c5fa-296b-4197-8bad-de5a268df743" />
+ 
 1. RTC Information Editing (E.RTCINFO)
 The user can edit Hour, Minute, Second, Day, Date, Month, and Year.
 Validation Rules:
@@ -38,6 +41,8 @@ Validation Rules:
 • Month: 1–12
 • Date: Valid according to month rules and leap year calculations
 Invalid inputs generate an error and require re-entry.
+<img width="1714" height="848" alt="Screenshot 2025-12-08 215544" src="https://github.com/user-attachments/assets/64dad2da-d5ab-4e81-8434-55a6338e4f1d" />
+<img width="1711" height="847" alt="Screenshot 2025-12-08 215614" src="https://github.com/user-attachments/assets/fc006cee-74aa-474e-86c1-48374f7b114b" />
 
 2. Device Allowed Time Editing (E.DEV.A.TIME)
 User enters time in HH:MM:SS format.
