@@ -50,11 +50,11 @@ Invalid inputs trigger an error and require re-entry.
 Valid values are saved automatically.
 
 3. Password Change (PWD CHG)
-a. Enter current password.
-b. Enter new password.
-c. Re-enter new password to confirm.
-d. If both match → password updated.
-e. If mismatch → error displayed → retry.
+   -> Enter current password.
+   -> Enter new password.
+   -> Re-enter new password to confirm.
+   -> If both match → password updated.
+   -> If mismatch → error displayed → retry.
    
 4. Exit (EXIT)
 Selecting EXIT returns control to the main logic.
