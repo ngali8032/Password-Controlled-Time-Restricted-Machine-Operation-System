@@ -32,6 +32,7 @@ Menu:
 4. EXIT
    <img width="1721" height="836" alt="Screenshot 2025-12-08 215529" src="https://github.com/user-attachments/assets/5630c5fa-296b-4197-8bad-de5a268df743" />
 
+
 1. RTC Information Editing (E.RTCINFO)
 The user can edit Hour, Minute, Second, Day, Date, Month, and Year.
 Validation Rules:
